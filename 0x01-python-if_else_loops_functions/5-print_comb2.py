@@ -4,4 +4,4 @@ for n in range(0, 100):
         sep = ', '
     else:
         sep = '\n'
-    print(f'{n:02d}', end=sep)
+    print('{:02d}'.format(n), end=sep)
