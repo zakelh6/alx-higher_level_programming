@@ -1,7 +1,7 @@
 # 0x00-python-hello_world
 
 ## Concepts
-- [Flyingcircus_2](https://github.com/zakelh6/alx-higher_level_programming/assets/39954629/8c578a55-c165-40e2-9c07-af633f480470)
+![Flyingcircus_2](https://github.com/zakelh6/alx-higher_level_programming/assets/39954629/8c578a55-c165-40e2-9c07-af633f480470)
 
 - [The Python Tutorial](https://intranet.alxswe.com/rltoken/Fl7kjKxXgkbmX5P0-4k4tQ)
 - [Python Programming: An Introduction to Computer Science 3rd edition](https://intranet.alxswe.com/rltoken/NHlaFZoFcYtZHVMj1ncXmw)
