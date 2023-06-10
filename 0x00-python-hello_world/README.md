@@ -171,8 +171,7 @@ What are indexing and slicing in Python
 - **Slicing:** Slicing allows you to extract a portion or a subset of a sequence. It is done by specifying a range of indices using the colon (:) notation. For example, **message[2:5]** retrieves a substring from the third character to the fifth character of the string **message**. Slicing can also include an optional step size, such as **message[::2]**, which retrieves every second character of the string.
   </details>
       <details>
-  <summary>
-What is the official Python coding style and how to check your code with pycodestyle
+  <summary> What is the official Python coding style and how to check your code with pycodestyle
         </summary>
 
 The official Python coding style is documented in PEP 8, which provides guidelines for writing clean and readable Python code. Some key points from PEP 8 include using spaces for indentation (4 spaces per level), using lowercase letters with underscores for variable and function names (snake_case), and using a maximum line length of 79 characters.
