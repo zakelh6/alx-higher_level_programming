@@ -12,7 +12,7 @@ This repository contains the following projects:
 
 - [0x01-python-if_else_loops_functions:](https://github.com/zakelh6/alx-higher_level_programming/tree/master/0x01-python-if_else_loops_functions) Building upon the fundamentals, this project focuses on conditional statements, loops, and functions in Python.
 
-- 0x02-python-import_modules: Exploring the concept of modules and importing in Python, including built-in and external modules.
+- [0x02-python-import_modules:](https://github.com/zakelh6/alx-higher_level_programming/tree/master/0x02-python-import_modules) Exploring the concept of modules and importing in Python, including built-in and external modules.
 
 - 0x03-python-data_structures: Working with various data structures in Python, such as lists, tuples, and dictionaries.
 
