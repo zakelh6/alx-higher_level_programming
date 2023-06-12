@@ -271,11 +271,226 @@ for item in items:
 # Placeholder for loop body
 ```
 In these examples, the pass statement is used to indicate that there is no code to execute for the function, the if statement, or the loop body. It allows you to define the structure of the code without implementing the functionality yet.
- </details>
+ 
+  </details>
 
+<details>
+<summary>
 How to use range
+</summary>
+
+In Python, the `range()` function is used to generate a sequence of numbers. It is commonly used in `for` loops to iterate a specific number of times.
+
+The `range()` function can be called with one, two, or three arguments:`
+
+- With one argument: `range(stop)`: generates a sequence from 0 to `stop - 1`.
+
+  ```python
+  for number in range(5):
+      print(number)
+
+  # Output: 0 1 2 3 4
+  ```
+ - With two arguments: `range(start, stop)`: generates a sequence from `start` to `stop - 1`.
+
+```python
+for number in range(2, 6):
+  print(number)
+
+# Output: 2 3 4 5
+```
+- With three arguments: `range(start, stop, step)`: generates a sequence from `start` to `stop - 1` with a specified step value.
+
+```python
+for number in range(1, 10, 2):
+    print(number)
+
+# Output: 1 3 5 7 9
+```
+The `range()` function returns an iterable object, which can be converted to a list if needed using the `list()` function.
+      
+</details>
+
+<details>
+<summary>
 What is a function and how do you use functions
-What does return a function that does not use any return statement
+</summary>
+  
+In Python, a function is a reusable block of code that performs a specific task. It allows you to group related code together, provide a name to that block of code, and call it whenever needed.
+
+To define a function, you use the `def` keyword, followed by the function name and a pair of parentheses. Any parameters the function takes are specified inside the parentheses. The function body is indented below the function definition.
+
+Here's an example of a function that adds two numbers:
+
+```python
+def add_numbers(a, b):
+    result = a + b
+    return result
+
+# Call the function
+sum = add_numbers(3, 5)
+print(sum)
+
+# Output: 8
+```
+
+In this example, the `add_numbers` function takes two parameters (`a` and `b`) and returns their sum. To call the function, you provide the arguments within the parentheses.
+
+Functions can have optional return statements to return values to the caller. If no return statement is specified, the function returns `None` by default.
+</details>
+  
+<details>
+<summary>
+What does return a function that does not use any return statement?
+</summary>
+
+If a function in Python does not use any return statement, it implicitly returns None by default. `None` is a special value in Python that represents the absence of a value.
+
+Here's an example:
+
+```python
+def greet():
+    print("Hello, World!")
+
+result = greet()
+print(result)
+
+# Output: Hello, World!
+# None
+```
+
+In this example, the `greet` function does not have a return statement. When the function is called, it prints "Hello, World!" but does not explicitly return a value. Therefore, the value of `result` is `None`.
+</details>
+
+<details>
+<summary>
 Scope of variables
+</summary>
+
+The scope of a variable in Python determines where the variable can be accessed or referenced in the code. It defines the visibility and lifetime of a variable.
+
+In Python, variables have different scopes, including:
+
+- Local scope: Variables defined inside a function have a local scope. They are only accessible within the function
+
+```python
+def my_function():
+    x = 10  # Local variable
+    print(x)
+
+my_function()
+# Output: 10
+
+print(x)  # Error: x is not defined outside the function
+```
+- Global scope: Variables defined outside any function or class have a global scope. They are accessible from anywhere in the code.
+
+```python
+x = 10  # Global variable
+
+def my_function():
+    print(x)
+
+my_function()
+# Output: 10
+
+print(x)
+# Output: 10
+```
+- Enclosing scope: In nested functions, variables can be defined in the enclosing scope. They are accessible to both the nested function and any functions defined within it.
+  
+```python
+def outer_function():
+    x = 10  # Enclosing variable
+
+    def inner_function():
+        print(x)
+
+    inner_function()
+    # Output: 10
+
+outer_function()
+# Output: 10
+```
+
+When accessing a variable, Python follows a specific order known as the **LEGB rule**:
+
+1. **Local scope**: Variables defined in the current function.
+2. **Enclosing scope**: Variables defined in the enclosing functions (if any).
+3. **Global scope**: Variables defined at the top level of the module or declared as global.
+4. **Built-in scope**: Python's pre-defined names (like `print`, `len`, etc.).
+</details>
+
+<details>
+<summary>
 What’s a traceback
-What are the arithmetic operators and how to use them
+</summary>
+A traceback is a report that shows the execution path and sequence of function calls leading to an exception (error) in Python. When an exception occurs, Python prints a traceback message to help identify the cause of the error.
+
+The traceback includes information about the line of code where the exception occurred, along with the function calls that led to that point. It shows the order in which functions were called, including the line numbers, file names, and the specific lines of code where the exception was raised.
+
+The traceback message is printed to the console or error log when an unhandled exception occurs. It provides valuable information for debugging and understanding the flow of execution leading to the error.
+</details>
+
+<details>
+<summary>
+  What are the arithmetic operators and how to use them
+</summary>
+In Python, arithmetic operators are used to perform mathematical operations on numerical values. Here are the common arithmetic operators:
+
+- Addition: `+`: Adds two values together.
+
+```python
+result = 5 + 3
+print(result)
+
+# Output: 8
+```
+
+- **Subtraction**: `-`: Subtracts the second value from the first.
+```python
+result = 5 - 3
+print(result)
+
+# Output: 2
+```
+- **Multiplication**: `*`: Multiplies two values.
+```python
+result = 5 * 3
+print(result)
+
+# Output: 15
+```
+- **Division**: `/`: Divides the first value by the second, returning a floating-point result.
+```python
+result = 10 / 3
+print(result)
+
+# Output: 3.3333333333333335
+```
+- **Floor Division**: `//`: Divides the first value by the second and returns the quotient, discarding the remainder.
+```python
+result = 10 // 3
+print(result)
+
+# Output: 3
+```
+
+- **FModulus**: `%`: Returns the remainder after division.
+```python
+result = 10 % 3
+print(result)
+
+# Output: 1
+```
+
+- **Exponentiation:** `**`: Raises the first value to the power of the second.
+```python
+result = 2 ** 3
+print(result)
+
+# Output: 8
+```
+</details>
+
+
