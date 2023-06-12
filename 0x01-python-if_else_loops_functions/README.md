@@ -32,10 +32,11 @@ Why Python programming is awesome
   <summary>
 Why indentation is so important in Python
         </summary>
+  
 Indentation plays a crucial role in Python because it defines the structure and hierarchy of the code. In Python, indentation is used to indicate blocks of code (such as loops, functions, and conditional statements) and their nesting levels.
-
+  
 The Python interpreter uses indentation to understand the logical structure of the code. Blocks of code with the same indentation level are considered part of the same block. Incorrect indentation can lead to syntax errors or alter the program's logic.
-
+  
 Unlike other programming languages that use braces or keywords to delimit blocks of code, Python uses indentation as a visual indicator. This feature enhances code readability and enforces consistent formatting practices among developers.
   </details>
 
@@ -43,8 +44,9 @@ Unlike other programming languages that use braces or keywords to delimit blocks
   <summary>
 How to use the if, if ... else statements
         </summary>
+  
 In Python, the `if` statement is used to perform conditional execution of code. It allows you to specify a condition, and if that condition is true, the associated block of code is executed. Optionally, you can include an `else` statement to specify a block of code to execute when the condition is false.
-
+  
 Here's an example of using the if statement:
 
 ```python
@@ -78,8 +80,9 @@ In this case, if the condition x > 0 is true, the code inside the if block is ex
   <summary>
 How to use comments
    </summary>
+  
 Comments in Python are used to add explanatory notes or annotations to the code. They are ignored by the interpreter and do not affect the program's execution. Comments help in understanding the code, making it more readable and maintainable.
-<br>
+  
 In Python, you can use two types of comments:
 
 - **Single-line comments:** Single-line comments begin with a hash symbol *(`#`)* and continue until the end of the line. Anything after the hash symbol on the same line is considered a comment.
@@ -173,8 +176,9 @@ Python's `for` loop abstracts away the lower-level details of iterating over a r
   <summary>
 How to use the break and continues statements
   </summary>
+    
 In Python, the `break` and `continue` statements are used within loops to control the flow of execution.
-
+    
 The `break` statement is used to exit a loop prematurely. When encountered, the `break` statement terminates the current loop and resumes execution at the next statement after the loop. It is commonly used to break out of a loop when a specific condition is met.
 
 Here's an example:
@@ -215,8 +219,9 @@ In this example, when the value 3 is encountered, the `continue` statement is ex
   <summary>
 How to use else clauses on loops
   </summary>
+    
 In Python, you can use the `else` clause with loops, including `for` and `while` loops. The `else` clause is executed when the loop completes all its iterations without encountering a `break` statement.
-
+    
 The `else` clause in a loop is optional and provides a way to specify a block of code that should be executed after the loop completes normally.
 
 Here's an example using the `for` loop:
@@ -242,8 +247,9 @@ Note that the `else` block is not executed if the loop is terminated prematurely
   <summary>
 What does the pass statement do, and when to use it
   </summary>
+    
 The `pass` statement in Python is a placeholder statement that does nothing. It is used when a statement is syntactically required but you don't want to execute any code. It acts as a null operation.
-
+    
 You can use the `pass` statement as a placeholder when you are writing code that you plan to implement later or when you want to define empty code blocks. It allows you to have a valid syntax without any functional code.
 
 Here's an example:
