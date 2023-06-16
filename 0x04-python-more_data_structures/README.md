@@ -1,4 +1,4 @@
-0x04. Python - More Data Structures: Set, Dictionary
+# 0x04. Python - More Data Structures: Set, Dictionary
 
 Read or watch:
 
@@ -30,7 +30,6 @@ another_set = set([4, 5, 6])  # Creating a set using set() function
 
 You can perform various operations on sets, such as adding elements, removing elements, checking membership, performing set operations (union, intersection, difference), and more.
 
-
 </details>
 
 <details>
@@ -55,6 +54,7 @@ my_set.add(4)
 my_set.remove(2)
 print(my_set)  # Output: {1, 3, 4}
 ```
+
 </details>
 
 <details>
@@ -66,8 +66,8 @@ Sets and lists serve different purposes, so their usage depends on the specific 
 - Use sets when you want to store a collection of unique elements and order doesn't matter. Sets provide fast membership testing, making it efficient to check if an element exists in a set. They are also useful when you need to perform set operations such as union, intersection, or difference between multiple sets.
 
 - On the other hand, use lists when you need to preserve the order of elements and allow duplicates. Lists are more appropriate for situations where you require sequential access to elements or need to maintain the order in which elements were added.
-</details>
 
+</details>
 
 <details>
 <summary>
@@ -86,6 +86,7 @@ for element in my_set:
 # 2
 # 3
 ```
+
 </details>
 
 <details>
@@ -118,6 +119,7 @@ Dictionaries, lists, and sets have different use cases:
 - Use lists when you need to maintain an ordered collection of elements. Lists are useful when you want to access elements by their index or when the order of elements is crucial.
 
 - Use sets when you want to store a collection of unique elements and order doesn't matter. Sets are beneficial when you need to perform membership tests or set operations efficiently.
+
 </details>
 
 <details>
@@ -136,6 +138,7 @@ How to iterate over a dictionary
 To iterate over a dictionary in Python, you can use a for loop. The loop iterates over each key in the dictionary, and you can access the associated value using the key.
 
 Here's an example of iterating over a dictionary:
+
 ```python
 my_dict = {"name": "John", "age": 30, "city": "New York"}
 for key in my_dict:
@@ -144,6 +147,7 @@ for key in my_dict:
 ```
 
 output:
+
 ```
 name John
 age 30
@@ -161,6 +165,7 @@ What is a lambda function
 In Python, a lambda function is an anonymous function that can be defined without a name. It is a way to create small, one-line functions without the need for a formal `def` statement. Lambda functions are typically used for simple and concise operations.
 
 The syntax for a lambda function is:
+
 ```python
 lambda arguments: expression
 ```
@@ -172,6 +177,7 @@ add = lambda x, y: x + y
 result = add(3, 5)
 print(result)  # Output: 8
 ```
+
 Lambda functions are often used in conjunction with higher-order functions like `map()`, `reduce()`, and `filter()`.
 </details>
 
@@ -182,11 +188,13 @@ What are the map, reduce and filter functions
 These are built-in functions in Python that operate on iterables like lists, sets, or dictionaries.
 
 - `map(function, iterable)`: Applies a given function to each element in the iterable and returns an iterator with the results. For example:
+
 ```python
 numbers = [1, 2, 3, 4, 5]
 squared = map(lambda x: x**2, numbers)
 print(list(squared))  # Output: [1, 4, 9, 16, 25]
 ```
+
 - `reduce(function, iterable)`: Applies a given function to the first two elements of the iterable, then applies it to the result and the next element, and so on, until a single value is obtained. Requires the `functools` module in Python 3. For example:
 
 ```python
@@ -203,5 +211,6 @@ numbers = [1, 2, 3, 4, 5]
 evens = filter(lambda x: x % 2 == 0, numbers)
 print(list(evens))  # Output: [2, 4]
 ```
+
 These functions provide a concise and functional programming style in Python, allowing you to perform operations on data more elegantly.
 </details>
