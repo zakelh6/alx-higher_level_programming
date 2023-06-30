@@ -1,6 +1,6 @@
-## 0x06. Python - Classes and Objects
+# 0x06. Python - Classes and Objects
 
-Resources
+## Resources
 Read or watch:
 
 - Object Oriented Programming (Read everything until the paragraph “Inheritance” excluded. You do NOT have to learn about class attributes, classmethod and staticmethod yet)
@@ -12,7 +12,7 @@ Read or watch:
 - Python Classes and Objects
 - Object Oriented Programming
 
-General
+## General
 - Why Python programming is awesome
 - What is OOP
 - “first-class everything”
